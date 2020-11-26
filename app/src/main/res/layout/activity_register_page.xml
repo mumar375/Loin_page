@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Register_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EEEEEE">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:text="REGESTER"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+        <ImageView
+
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:src="@drawable/person"/>
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="273dp"
+                android:layout_height="45dp"
+                android:hint="Name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:src="@drawable/email"/>
+            <EditText
+                android:id="@+id/ed_re_email"
+                android:layout_width="273dp"
+                android:layout_height="45dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/ed_re_pass"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/ed_re_cnf_pass"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"/>
+    </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:src="@drawable/phone"/>
+        <EditText
+            android:id="@+id/ed_call"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:hint="Phone Number"/>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:src="@drawable/gallery"/>
+        <Button
+            android:id="@+id/ed_gal_bt"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:textColorHint="#FFEB3B"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:hint="Chose an Image"
+            />
+        <ImageView
+            android:id="@+id/ed_gallery"
+            android:layout_width="273dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="-275dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            />
+        <RadioButton
+            android:id="@+id/rd_gender"
+            android:layout_width="40dp"
+            android:layout_height="45dp"/>
+        <TextView
+
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="Male"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:textSize="20sp"
+            />
+        <RadioButton
+            android:id="@+id/rd_gender"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            tools:ignore="DuplicateIds,InvalidId" />
+        <TextView
+
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="Female"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:id="@+id/regi"
+            android:background="#FFEB3B"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</ScrollView>
